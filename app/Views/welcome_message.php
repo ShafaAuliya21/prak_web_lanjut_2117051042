@@ -222,7 +222,7 @@
 
         <h1>Shafa Auliya <?= CodeIgniter\CodeIgniter::CI_VERSION ?></h1>
 
-        <h2>2117051029</h2>
+        <h2>2117051042</h2>
 
     </div>
 
