@@ -14,6 +14,7 @@
 </nav>
     <div style="text-align:center;">
         <img src="<?=base_url("assets/img/fotoShafaauliya.jpg")?>" alt="fotoroy" style="height: 260px; width: 260px; border-radius: 50%; object-fit: cover; object-position: 0 -8px;"  border="2px" ><br>
+
         <b><p><h3>Hi</h3></p></b> 
         <button type="button" class="btn btn-primary" style="width: 300px;"><?= $nama ?></button><br><br>
         <button type="button" class="btn btn-primary" style="width: 300px;"><?= $kelas ?></button><br><br>
