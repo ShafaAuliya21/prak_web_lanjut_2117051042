@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <link rel="stylesheet" href="<?= base_url("assets/css/style.css")?>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <b><a class="navbar-brand" href="#">Profile</a></b>
-     </div>
-</nav>
-    <div style="text-align:center;">
-        <img src="<?=base_url("assets/img/fotoShafaauliya.jpg")?>" alt="fotoroy" style="height: 260px; width: 260px; border-radius: 50%; object-fit: cover; object-position: 0 -8px;"  border="2px" ><br>
-
-        <b><p><h3>Hi</h3></p></b> 
-        <button type="button" class="btn btn-primary" style="width: 300px;"><?= $nama ?></button><br><br>
-        <button type="button" class="btn btn-primary" style="width: 300px;"><?= $kelas ?></button><br><br>
-        <button type="button" class="btn btn-primary" style="width: 300px;"><?= $npm ?></button><br><br>
+    <div class="container">
+        <div class="profile-box">
+            <h3><b>Profil</b></h3>
+            <img src="<?=base_url("assets/img/fotoShafaauliya.jpg")?>" class="profile-pic"><br><br>
+            <div class="btn">
+                <button type="button" style="width: 250px;"><?= $nama ?></button><br><br>
+                <button type="button" style="width: 250px;"><?= $kelas ?></button><br><br>
+                <button type="button" style="width: 250px;"><?= $npm ?></button><br><br>
+            </div>
+        </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
