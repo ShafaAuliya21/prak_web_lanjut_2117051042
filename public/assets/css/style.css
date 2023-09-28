@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: darkblue;
 }
 
 body{
@@ -22,6 +21,7 @@ body{
     align-items: center;
     justify-content: center;
     display: flex;
+    color: darkblue;
 }
 
 .profile-box{
@@ -61,4 +61,8 @@ body{
     font-weight: 300;
     background: white;
     color: black;
+}
+
+.container .profile-box .class-error{
+    color: rgb(182, 26, 26);
 }
