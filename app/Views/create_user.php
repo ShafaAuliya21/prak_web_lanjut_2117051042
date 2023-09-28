@@ -15,12 +15,31 @@
         <div class="profile-box">
             <form action="<?= base_url('user/store')?>" method="POST">
                 <b><h3>Inputan Data</h3></b><br>
-                <div class="input-box">
-                    <input type="text" name="nama" placeholder="Nama"><br><br>
-                    <input type="text" name="kelas" placeholder="Kelas"><br><br>
-                    <input type="text" name="npm" placeholder="NPM"><br><br>
+
+                <?php if(session()->getFlashdata('errors')) : ?>
+                <div class="class-error">
+                    
+                        <?= session()->getFlashdata('errors') ?>
+                  
                 </div>
-                <button type="submit" class="btn btn-secondary">Submit</button>
+                <?php endif; ?>
+
+                <div class="input-box">
+                    <input type="text" name="nama" placeholder="Nama" value="<?= old('nama') ?>"> <br><br>
+                    <input type="text" name="npm" placeholder="NPM" value="<?= old('npm') ?>"><br><br>
+                    <select name="kelas" id="kelas" value="<?= old('kelas') ?>">
+                        <?php
+                        foreach ($kelas as $item){
+                        ?>
+                            <option value="<?= $item['id'] ?>">
+                                <?= $item['nama_kelas']?>
+                            </option>
+                        <?php
+                        }
+                        ?>
+                    </select>
+                </div>
+                <br><button type="submit" class="btn btn-secondary">Submit</button>
             </form>
         </div>
     </div>
