@@ -11,7 +11,7 @@ body{
     align-items: center;
     background-size: cover;
     background-position: center;
-    background: linear-gradient(45deg, #f02fc2, #6094ea);
+    background: #BAD7E9;
 }
 
 .container{
@@ -21,11 +21,11 @@ body{
     align-items: center;
     justify-content: center;
     display: flex;
-    color: darkblue;
+    color: #0081C9;
 }
 
 .profile-box{
-    background-color: rgb(184, 187, 188);
+    background-color: rgb(255, 255, 255, 0.5);
     text-align: center;
     padding: 50px 40px;
     border-radius: 12px;
@@ -66,3 +66,59 @@ body{
 .container .profile-box .class-error{
     color: rgb(182, 26, 26);
 }
+
+.data-mahasiswa{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    
+  }
+
+.data-box{
+    margin : 20px auto; 
+    color: #0081C9;
+    position: relative;
+}
+
+.tabel-box{
+    background-color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 12px;
+    position: relative;
+    align-items: center;
+}
+
+.table-user {
+    border-collapse: collapse;
+    width: 50%;
+    border-radius: 50px;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+}
+ 
+.table-user tr th{
+    font-weight: normal;
+    border: 1px solid #000;
+}
+ 
+.table-user, th, td {
+    padding: 8px 20px;
+    text-align: center;
+    border: 1px solid #000;
+}
+ 
+.table-user tr{
+    background-color: #ffff;
+    border: 1px solid #000;
+}
+
+.table-user th{
+    border: 1px solid #000;
+}
+
+.table-user td{
+    border: 1px solid #000;
+}
+
