@@ -9,6 +9,8 @@
         </div>
     </div>
 
+    <a href="<?base_url('user/create')?>" type="button" class="btn btn-primary">Tambah Data</a>
+
 <div class="tabel-box">
 <table class="tabel-user">
     <thead>
@@ -31,6 +33,7 @@
                 <td class="col justify-content-center text-center"><?= $user['npm'] ?></td>
                 <td class="col justify-content-center text-center"><?= $user['nama_kelas'] ?></td>
                 <td class="col justify-content-center text-center">
+                <a href="<?= base_url('user/'. $user['id'])?>" type="button" class="btn btn-success">Detail</a>
                     <button type="button" class="btn btn-warning">Edit</button>
                     <button type="button" class="btn btn-danger">Hapus</button>
                 </td>

@@ -30,6 +30,8 @@ body{
     padding: 50px 40px;
     border-radius: 12px;
     position: relative;
+    height: 510px;
+    width: 350px;
 }
 
 .profile-box .btn button{
@@ -53,6 +55,17 @@ body{
 }
 
 .input-box input{
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    border: none;
+    font-size: 1em;
+    font-weight: 300;
+    background: white;
+    color: black;
+}
+
+.input-box select{
     padding: 10px 10px;
     border-radius: 20px;
     border: none;
@@ -121,4 +134,3 @@ body{
 .table-user td{
     border: 1px solid #000;
 }
-
