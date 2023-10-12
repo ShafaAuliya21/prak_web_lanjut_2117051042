@@ -14,7 +14,7 @@ class UserModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nama', 'npm', 'id_kelas'];
+    protected $allowedFields    = ['nama', 'npm', 'id_kelas', 'foto'];
 
     // Dates
     protected $useTimestamps = true;
@@ -46,10 +46,24 @@ class UserModel extends Model
             ]
         ],
 
+        'kelas' => [
+            'rules' => 'required',
+            'errors' => [
+                'required' => '{field} wajib diisi!'
+            ]
+        ],
+
     ];
 
-    public function getUser(){
-        return $this->join('kelas', 'kelas.id=user.id_kelas')->findAll();
+    protected $skipValidation=true;
+
+    public function getUser($id = null){
+        if ($id !=null){
+            return $this->select('user.*, kelas.nama_kelas')
+            ->join('kelas', 'kelas.id=user.id_kelas')->find($id);
+        }
+        return $this->select('user.*, kelas.nama_kelas')
+        ->join('kelas', 'kelas.id=user.id_kelas')->findAll();
     }
 
 }
