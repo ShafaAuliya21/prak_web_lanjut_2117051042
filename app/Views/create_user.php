@@ -3,8 +3,8 @@
 <?= $this->section('content')?>
 
     <div class="container">
-        <div class="profile-box">
-            <form action="<?= base_url('user/store')?>" method="POST" enctype="multipart/form-data">
+        <div class="profile-box-create">
+            <form action="<?= base_url('/user/store')?>" method="post" enctype="multipart/form-data">
             <?php if(session()->getFlashdata('errors')) : ?>
                 <div class="class-error">
                                 
@@ -14,12 +14,12 @@
             <?php endif; ?>
             
                 <div class="input-box">
-                    <b><h3>Inputan Data</h3></b><br>
-                    <input type="text" name="nama" placeholder="Nama" value="<?= old('nama') ?>" style="width: 250px;"> <br><br>
-                    <input type="text" name="npm" placeholder="NPM" value="<?= old('npm') ?>" style="width: 250px;"><br><br>
+                    <b><h3>Input Data</h3></b><br>
                     <input type="file" name="foto" id="foto" style="width: 250px;"><br><br>
+                    <input type="text" name="nama" placeholder="Name" value="<?= old('nama') ?>" style="width: 250px;"> <br><br>
+                    <input type="text" name="npm" placeholder="NPM" value="<?= old('npm') ?>" style="width: 250px;"><br><br>
                     <select name="kelas" id="kelas" value="<?= old('kelas') ?>" style="width: 250px;">
-                    <option selected value="">Kelas</option>
+                    <option selected value="">Class</option>
                         <?php
                         foreach ($kelas as $item){
                         ?>

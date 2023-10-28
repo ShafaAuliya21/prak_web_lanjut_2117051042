@@ -24,13 +24,55 @@ body{
     color: #0081C9;
 }
 
+.profile-box-profile{
+    background-color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 12px;
+    position: relative;
+    height: 460px;
+    width: 350px;
+}
+
+.profile-box-profile .btn button{
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    border: none;
+    font-size: 1em;
+    font-weight: 300;
+    background: white;
+    color: black;
+}
+
+.profile-box-create{
+    background-color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 12px;
+    position: relative;
+    height: 480px;
+    width: 350px;
+}
+
+.profile-box-create .btn button{
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    border: none;
+    font-size: 1em;
+    font-weight: 300;
+    background: white;
+    color: black;
+}
+
 .profile-box{
     background-color: rgb(255, 255, 255, 0.5);
     text-align: center;
     padding: 50px 40px;
     border-radius: 12px;
     position: relative;
-    height: 510px;
+    height: 600px;
     width: 350px;
 }
 
@@ -113,24 +155,24 @@ body{
  
 .table-user tr th{
     font-weight: normal;
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
 }
  
 .table-user, th, td {
     padding: 8px 20px;
     text-align: center;
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
 }
  
 .table-user tr{
     background-color: #ffff;
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
 }
 
 .table-user th{
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
 }
 
 .table-user td{
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
 }
