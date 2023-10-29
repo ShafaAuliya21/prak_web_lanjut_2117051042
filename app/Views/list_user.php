@@ -3,7 +3,7 @@
 <?= $this->section('content')?>
 
 <div class="container-listuser">
-    <br><div class="data-box">
+    <br><br><br><div class="data-box">
         <div class="data-mahasiswa">
             <h2>Data Mahasiswa</h2>
         </div>
@@ -33,8 +33,8 @@
                 <td class="col justify-content-center text-center"><?= $user['npm'] ?></td>
                 <td class="col justify-content-center text-center"><?= $user['nama_kelas'] ?></td>
                 <td class="col justify-content-center text-center d-flex">
-                <form action="<?= base_url('user/'. $user['id'])?>" type="button" class="btn btn-success">Detail</form>
-                <form action="<?= base_url('user/'. $user['id']. '/edit')?>" type="button" class="btn btn-warning">Edit</form>
+                <a href="<?= base_url('user/'. $user['id'])?>" type="button" class="btn btn-success">Detail</a>
+                <a href="<?= base_url('user/'. $user['id']. '/edit')?>" type="button" class="btn btn-warning">Edit</a>
                 <form action="<?=base_url('user/'. $user['id'])?>" method="post">
                     <input type= "hidden" name ="_method" value= "DELETE">
                     <?= csrf_field() ?>

@@ -13,7 +13,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?= $this->renderSection('content')?>
+
+    <header class="header">
+        <div class="logo">
+            Data<span>Mahasiswa</span>
+        </div>
+            <ul class="navlist mb-0 ps-0">
+                <li><a href="<?= base_url('/')?>">Home</a></li>
+                <li><a href="<?= base_url('/user')?>">List User</a></li>
+                <li><a href="<?= base_url('/kelas')?>">List Class</a></li>
+            </ul>
+        </header>
+        <?= $this->renderSection('content')?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

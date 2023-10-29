@@ -3,7 +3,60 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    list-style: none;
 }
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 18px 50px;
+    transition: all 0.5s; 
+    background-color: rgb(255, 255, 255, 0.5);
+    justify-content: space-around;
+    position: fixed;
+    right: 0;
+    left: 0;
+  }
+
+  .logo{
+    font-size: 25px;
+    color: #0C356A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #0081C9;
+}
+
+.navlist {
+    display: flex;
+  }
+  
+  .navlist ul {
+    margin-bottom: 0;
+  }
+  
+  .navlist a {
+    align-items: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 4px 5px;
+    margin: 0 22px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.42s;
+  }
+  
+  .navlist a:hover {
+    color: #6d6a6a;
+    border-bottom: 2px solid #fff;
+  }
 
 body{
     display: flex;
@@ -72,11 +125,33 @@ body{
     padding: 50px 40px;
     border-radius: 12px;
     position: relative;
-    height: 600px;
+    height: 580px;
     width: 350px;
 }
 
 .profile-box .btn button{
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    border: none;
+    font-size: 1em;
+    font-weight: 300;
+    background: white;
+    color: black;
+}
+
+
+.profile-box-kelas{
+    background-color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 50px 40px;
+    border-radius: 12px;
+    position: relative;
+    height: 410px;
+    width: 350px;
+}
+
+.profile-box-kelas .btn button{
     padding: 10px 10px;
     border-radius: 20px;
     border: none;

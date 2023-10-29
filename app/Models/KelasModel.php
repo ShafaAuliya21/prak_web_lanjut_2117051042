@@ -13,7 +13,7 @@ class KelasModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nama_kelas'];
+    protected $allowedFields    = ['nama_kelas', 'kapasitas_kelas'];
 
     // Dates
     protected $useTimestamps = true;
@@ -22,8 +22,44 @@ class KelasModel extends Model
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
-    public function getKelas(){
+    // Validation
+    protected $validationRules      = [];
+    protected $validationMessages   = [];
+    protected $skipValidation       = false;
+    protected $cleanValidationRules = true;
+
+    // Callbacks
+    protected $allowCallbacks = true;
+    protected $beforeInsert   = [];
+    protected $afterInsert    = [];
+    protected $beforeUpdate   = [];
+    protected $afterUpdate    = [];
+    protected $beforeFind     = [];
+    protected $afterFind      = [];
+    protected $beforeDelete   = [];
+    protected $afterDelete    = [];
+
+    public function saveKelas($data)
+    {
+        $this->insert($data);
+    }
+
+    public function getKelas($id=null)
+    {
+        if($id != null) {
+            return $this->select('kelas.*')
+                ->find($id);
+        }
         return $this->findAll();
     }
 
+    public function updateKelas($data, $id)
+    {
+        return $this->update($id, $data);
+    }
+
+    public function deleteKelas($id)
+    {
+        return $this->delete($id);
+    }
 }

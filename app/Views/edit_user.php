@@ -2,8 +2,8 @@
 
 <?= $this->section('content')?>
 
-    <div class="container">
-        <div class="profile-box">
+<div class="container">
+ <div class="profile-box">
             <form action="<?= base_url('/user/'. $user['id'])?>" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="_method" value="PUT">
             <?= csrf_field()?>
@@ -16,7 +16,7 @@
             <?php endif; ?>
             
                 <div class="input-box">
-                    <b><h3>Input Data</h3></b><br>
+                    <b><h3>Edit Data</h3></b><br>
                     <img src="<?= $user['foto'] ?? '<default-foto>' ?>" class="rounded-circle" width= "100" height="100"><br><br>
                     <input type="file" name="foto" id="foto" style="width: 250px;" ><br><br>
                     <input type="text" name="nama" placeholder="Nama" value="<?= $user['nama']?>" id="nama" style="width: 250px;"> <br><br>
